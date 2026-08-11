@@ -1,0 +1,32 @@
+name: Fetch Pretix Tickets
+
+on:
+  schedule:
+    # Run every 5 minutes
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Fetch tickets
+        env:
+          PRETIX_TOKEN: ${{ secrets.PRETIX_TOKEN }}
+          ORGANIZER: envelope-soundsystem
+          EVENT: campout-26
+        run: node fetch-tickets.js
+      
+      - name: Commit and push if changed
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add tickets.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update tickets data" && git push)
