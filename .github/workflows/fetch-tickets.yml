@@ -25,7 +25,7 @@ jobs:
           PRETIX_TOKEN: ${{ secrets.PRETIX_TOKEN }}
           ORGANIZER: envelope-soundsystem
           EVENT: campout-26
-        run: node fetch-tickets.js
+        run: node fetch-tickets.js && echo "tickets" && cat tickets.json
       
       - name: Commit and push if changed
         env:
