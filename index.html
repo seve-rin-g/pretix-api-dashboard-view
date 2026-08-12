@@ -17,7 +17,7 @@
             --danger: #ef4444;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: Courier New;
             background-color: var(--bg);
             color: var(--text);
             padding: 2rem;
@@ -62,17 +62,7 @@
         button:hover {
             opacity: 0.9;
         }
-        .quota-card {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            margin-bottom: 1rem;
-            border: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        
         .quota-name {
             font-size: 1.1rem;
             font-weight: 600;
@@ -105,12 +95,6 @@
     </style>
 </head>
 <body>
-
-    <div class="config-panel">
-        <h2>Pretix Credentials</h2>
-        <button onclick="fetchAvailability()">Check Tickets Remaining</button>
-    </div>
-
     <div id="results"></div>
 
     <script>
@@ -142,7 +126,7 @@
         function renderResults(quotas, timestamp) {
             const resultsDiv = document.getElementById('results');
             const lastUpdated = timestamp ? new Date(timestamp).toLocaleString() : 'Unknown';
-            resultsDiv.innerHTML = `<h2>Remaining Tickets</h2><p style="font-size: 0.85rem; color: #64748b;">Last updated: ${lastUpdated}</p>`;
+            resultsDiv.innerHTML = `<h2>Remaining Tickets for Mabon</h2><p style="font-size: 0.85rem; color: #64748b;">Last updated: ${lastUpdated}</p>`;
 
             if (!quotas || quotas.length === 0) {
                 resultsDiv.innerHTML += '<p>No ticket quotas found for this event.</p>';
@@ -150,22 +134,17 @@
             }
 
             quotas.forEach(quota => {
+                if (quota.name.toLowerCase().includes('total') || quota.name.toLowerCase().includes('staff')) { return; } // Skip quotas with "total" or "paid" in the name
+
                 const card = document.createElement('div');
                 card.className = 'quota-card';
 
                 const totalSize = quota.size !== null ? quota.size : 'Unlimited';
-                const statusBadge = quota.available 
-                    ? '<span class="badge available">Available</span>' 
-                    : '<span class="badge sold-out">Sold Out</span>';
+                
 
                 card.innerHTML = `
                     <div>
-                        <div class="quota-name">${quota.name}</div>
-                        <div style="font-size: 0.85rem; color: #64748b; margin-top: 0.25rem;">Total Capacity: ${totalSize}</div>
-                    </div>
-                    <div class="quota-status">
-                        ${statusBadge}
-                        <div class="count">${quota.available_number ?? 0} left</div>
+                        <div class="quota-name">${quota.name}: ${quota.available_number ?? 0}/${totalSize}</div>
                     </div>
                 `;
                 resultsDiv.appendChild(card);
