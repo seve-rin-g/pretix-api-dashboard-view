@@ -1,0 +1,1 @@
+This is a small widget showing remaining tickets available for an audio event; this information would otherwise be trapped behind a login into our ticket providing app, but we want it to be viewable on an existing dashboard along with our other metrics.
