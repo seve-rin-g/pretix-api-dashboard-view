@@ -2,12 +2,13 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  schedule:
+    # Runs at the start of every 2nd hour (e.g., 00:00, 02:00, 04:00...)
+    - cron: '0 */2 * * *'
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - main # Also runs automatically if you push code changes
+  workflow_dispatch: # Allows you to manually trigger it via the UI
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
