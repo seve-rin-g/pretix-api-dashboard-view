@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-13T16:35:58.804Z",
+  "timestamp": "2026-08-13T17:38:00.488Z",
   "results": [
     {
       "id": 5793009,
@@ -47,7 +47,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 36,
+      "available_number": 35,
       "ignore_for_event_availability": false
     },
     {
