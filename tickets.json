@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-15T03:53:04.122Z",
+  "timestamp": "2026-08-15T04:22:32.466Z",
   "results": [
     {
       "id": 5793009,
@@ -15,7 +15,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 20,
+      "available_number": 22,
       "ignore_for_event_availability": false
     },
     {
@@ -63,7 +63,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 33,
+      "available_number": 34,
       "ignore_for_event_availability": false
     },
     {
@@ -115,7 +115,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 77,
+      "available_number": 79,
       "ignore_for_event_availability": false
     }
   ]
