@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-28T00:33:58.338Z",
+  "timestamp": "2026-08-28T12:09:54.567Z",
   "results": [
     {
       "id": 5793009,
       "name": "General Ticket",
-      "size": 100,
+      "size": 106,
       "items": [
         1063724,
         1117226
@@ -14,14 +14,14 @@
       "closed": false,
       "close_when_sold_out": false,
       "release_after_exit": false,
-      "available": false,
-      "available_number": 0,
+      "available": true,
+      "available_number": 5,
       "ignore_for_event_availability": false
     },
     {
       "id": 5793010,
       "name": "Reduced Ticket",
-      "size": 40,
+      "size": 34,
       "items": [
         1063725
       ],
@@ -30,8 +30,8 @@
       "closed": false,
       "close_when_sold_out": false,
       "release_after_exit": false,
-      "available": true,
-      "available_number": 6,
+      "available": false,
+      "available_number": 0,
       "ignore_for_event_availability": false
     },
     {
