@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-08T22:40:13.576Z",
+  "timestamp": "2026-09-09T00:38:18.322Z",
   "results": [
     {
       "id": 5793009,
       "name": "General Ticket",
-      "size": 145,
+      "size": 140,
       "items": [
         1063724,
         1117226
@@ -15,7 +15,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 10,
+      "available_number": 5,
       "ignore_for_event_availability": false
     },
     {
@@ -63,7 +63,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 8,
+      "available_number": 6,
       "ignore_for_event_availability": false
     },
     {
@@ -85,7 +85,7 @@
     {
       "id": 5919531,
       "name": "Artist Guest Ticket",
-      "size": 3,
+      "size": 8,
       "items": [
         1117229
       ],
@@ -95,7 +95,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 2,
+      "available_number": 5,
       "ignore_for_event_availability": false
     },
     {
@@ -115,7 +115,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 19,
+      "available_number": 17,
       "ignore_for_event_availability": false
     }
   ]
