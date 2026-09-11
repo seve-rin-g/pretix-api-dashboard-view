@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-10T22:07:33.176Z",
+  "timestamp": "2026-09-11T00:07:18.702Z",
   "results": [
     {
       "id": 5793009,
@@ -37,7 +37,7 @@
     {
       "id": 5793012,
       "name": "Staff + Volunteers",
-      "size": 50,
+      "size": 90,
       "items": [
         1063727
       ],
@@ -46,8 +46,8 @@
       "closed": false,
       "close_when_sold_out": false,
       "release_after_exit": false,
-      "available": false,
-      "available_number": 0,
+      "available": true,
+      "available_number": 40,
       "ignore_for_event_availability": false
     },
     {
@@ -63,7 +63,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 24,
+      "available_number": 23,
       "ignore_for_event_availability": false
     },
     {
