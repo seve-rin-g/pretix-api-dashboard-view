@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-14T18:12:53.595Z",
+  "timestamp": "2026-09-14T21:51:49.028Z",
   "results": [
     {
       "id": 5793009,
@@ -15,13 +15,13 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 3,
+      "available_number": 2,
       "ignore_for_event_availability": false
     },
     {
       "id": 5793010,
       "name": "Reduced Ticket",
-      "size": 34,
+      "size": 39,
       "items": [
         1063725
       ],
@@ -30,8 +30,8 @@
       "closed": false,
       "close_when_sold_out": false,
       "release_after_exit": false,
-      "available": false,
-      "available_number": 0,
+      "available": true,
+      "available_number": 2,
       "ignore_for_event_availability": false
     },
     {
@@ -47,7 +47,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 31,
+      "available_number": 30,
       "ignore_for_event_availability": false
     },
     {
@@ -63,13 +63,13 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 16,
+      "available_number": 14,
       "ignore_for_event_availability": false
     },
     {
       "id": 5899548,
       "name": "Supporter Ticket",
-      "size": 29,
+      "size": 24,
       "items": [
         1063726
       ],
@@ -78,8 +78,8 @@
       "closed": false,
       "close_when_sold_out": false,
       "release_after_exit": false,
-      "available": true,
-      "available_number": 5,
+      "available": false,
+      "available_number": 0,
       "ignore_for_event_availability": false
     },
     {
@@ -115,7 +115,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 14,
+      "available_number": 10,
       "ignore_for_event_availability": false
     }
   ]
