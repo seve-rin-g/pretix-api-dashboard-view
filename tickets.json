@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-09-15T04:47:04.479Z",
+  "timestamp": "2026-09-15T09:38:24.218Z",
   "results": [
     {
       "id": 5793009,
       "name": "General Ticket",
-      "size": 138,
+      "size": 139,
       "items": [
         1063724,
         1117226
@@ -47,7 +47,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 30,
+      "available_number": 29,
       "ignore_for_event_availability": false
     },
     {
@@ -63,7 +63,7 @@
       "close_when_sold_out": false,
       "release_after_exit": false,
       "available": true,
-      "available_number": 14,
+      "available_number": 13,
       "ignore_for_event_availability": false
     },
     {
