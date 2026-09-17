@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-17T15:37:39.371Z",
+  "timestamp": "2026-09-17T19:15:23.275Z",
   "results": [
     {
       "id": 5793009,
@@ -53,7 +53,7 @@
     {
       "id": 5899544,
       "name": "Parking Pass",
-      "size": 135,
+      "size": 120,
       "items": [
         1111293
       ],
@@ -62,8 +62,8 @@
       "closed": false,
       "close_when_sold_out": false,
       "release_after_exit": false,
-      "available": true,
-      "available_number": 15,
+      "available": false,
+      "available_number": 0,
       "ignore_for_event_availability": false
     },
     {
