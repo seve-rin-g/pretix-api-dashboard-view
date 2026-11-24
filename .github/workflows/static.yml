@@ -2,9 +2,6 @@
 name: Deploy static content to Pages
 
 on:
-  schedule:
-    # Runs at the start of every 2nd hour (e.g., 00:00, 02:00, 04:00...)
-    - cron: '0 */2 * * *'
   push:
     branches:
       - main # Also runs automatically if you push code changes
